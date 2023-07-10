@@ -6,7 +6,7 @@ import classes from "./Products.module.css";
 export default function Products({ addToCart, cart }) {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/product").then((result) => {
+    axios.get("https://shoes-web.onrender.com/product").then((result) => {
       setData(result.data);
     });
   }, []);
